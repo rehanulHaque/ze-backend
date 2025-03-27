@@ -11,7 +11,7 @@ const app = express()
 
 app.use(cors({
     methods: ["POST", "GET"],
-    origin: ["https://ze-enterprice.vercel.app/", "http://localhost:3000"]
+    origin: "*"
 }))
 
 app.use(express.json())
