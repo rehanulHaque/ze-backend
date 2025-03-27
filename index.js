@@ -22,4 +22,4 @@ app.use("/api/productquickenquiry", ProductQuickEnquiryRoute)
 app.use("/api/serviceenquiry", ServicePageEnquiryRoute)
 app.use("/api/servicequickenquiry", ServiceQuickEnquiryRoute)
 
-app.listen(3001, () => console.log('Service Running'))
+app.listen(process.env.PORT, () => console.log('Service Running'))
